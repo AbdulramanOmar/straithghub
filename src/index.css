@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+  direction: rtl !important;
+}
+body {
+  font-family: "Cairo", sans-serif !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    color: white;
+    z-index: 30;
+  }
+  .swiper-pagination-bullet {
+    background-color: #fff;
+  }
+}
+.back-liner {
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0.5) 0%,
+    rgb(0 0 0 / 0.3) 50%,
+    #fff0 100%
+  );
+}
